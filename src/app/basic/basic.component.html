@@ -1,0 +1,6 @@
+<div class="container">
+  <input ngModel="output" class="input" type="text" value={{output}}/>
+  <button *ngFor="let item of items" class="button" (click)="onClick(item)" [ngStyle]="getStyles(item)">
+    {{ item.text }}
+  </button>
+</div>
